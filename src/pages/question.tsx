@@ -1,5 +1,4 @@
 import React from "react";
-import PleaseGif from "@/assets/please.gif";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router";
 
@@ -18,7 +17,7 @@ export default function Question() {
       <div className="text-4xl md:text-6xl">will u be my valentine?</div>
 
       <div className="flex flex-col justify-evenly items-center gap-2 w-full h-1/2">
-        <img src={PleaseGif} alt="Please" className="h-full" />
+        <img src={"/please.gif"} alt="Please" className="h-full" />
 
         <div className="relative gap-2 flex md:w-1/4 w-1/2 justify-center">
           <Button

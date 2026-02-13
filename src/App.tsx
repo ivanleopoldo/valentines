@@ -1,4 +1,3 @@
-import Flowers from "@/assets/2.svg";
 import { useNavigate } from "react-router";
 
 function App() {
@@ -13,7 +12,11 @@ function App() {
         <h3>click the flowers!!</h3>
       </div>
       <button onClick={() => navigate("/question")} className="md:w-1/3 w-1/2">
-        <img src={Flowers} alt="Flowers" className="motion-rotate-loop-2" />
+        <img
+          src={"/flowers.png"}
+          alt="Flowers"
+          className="motion-rotate-loop-2"
+        />
       </button>
       <h1 className="text-4xl">flowers for u {">/<"}</h1>
     </div>

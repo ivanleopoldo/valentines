@@ -1,10 +1,21 @@
-import { Button } from "@/components/ui/button";
+import Flowers from "@/assets/2.svg";
+import { useNavigate } from "react-router";
 
 function App() {
+  const navigate = useNavigate();
+
   return (
-    <div className="p-4 flex items-center justify-center h-screen">
-      <p className="font-bold underline">Hello World</p>
-      <Button>Click Me</Button>
+    <div className="flex flex-col gap-5 items-center h-full justify-center">
+      <div className="text-center">
+        <h1 className="text-2xl md:text-4xl font-bold cherry-bomb">
+          happy valentine's my love!
+        </h1>
+        <h3>click the flowers!!</h3>
+      </div>
+      <button onClick={() => navigate("/question")} className="md:w-1/3 w-1/2">
+        <img src={Flowers} alt="Flowers" className="motion-rotate-loop-2" />
+      </button>
+      <h1 className="text-4xl">flowers for u {">/<"}</h1>
     </div>
   );
 }
